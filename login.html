@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — LUCENT</title>
+  <meta name="description" content="Masuk ke akun LUCENT untuk membuka dashboard dan foto favoritmu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="login">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header is-solid" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__word">LUCENT</span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="news.html">News</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+        <div class="nav__auth">
+          <a class="nav__link" data-auth="guest" href="login.html">Masuk</a>
+          <a class="btn btn--primary btn--sm" data-auth="guest" href="register.html">Daftar</a>
+          <a class="nav__user" data-auth="user" href="dashboard.html">
+            <span class="nav__avatar" data-user-initial aria-hidden="true">L</span>
+            <span class="nav__username" data-user-name>Pengguna</span>
+          </a>
+          <button class="nav__link" data-auth="user" type="button" data-logout>Keluar</button>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false"
+        aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="auth">
+      <div class="auth__card">
+        <p class="eyebrow">Selamat datang kembali</p>
+        <h1 class="auth__title">Masuk ke LUCENT</h1>
+        <p class="auth__lead">Lanjutkan dari tempat kamu berhenti — citra favoritmu menunggu.</p>
+
+        <div class="form-alert" role="alert" aria-live="polite"></div>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="nama@email.com" />
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="password">Kata sandi</label>
+            <input type="password" id="password" name="password" autocomplete="current-password"
+              placeholder="Kata sandi kamu" />
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">Masuk</button>
+        </form>
+
+        <p class="auth__foot">Belum punya akun? <a href="register.html">Daftar gratis</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__word">LUCENT</span>
+        </a>
+        <p class="footer__tag">Arsip citra antariksa NASA — tempat semesta bercerita lewat cahaya.</p>
+      </div>
+      <div>
+        <h3 class="footer__title">Jelajahi</h3>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Kategori</h3>
+        <ul class="footer__list">
+          <li><a href="gallery.html?category=galaxies">Galaksi &amp; Nebula</a></li>
+          <li><a href="gallery.html?category=planets">Planet &amp; Bulan</a></li>
+          <li><a href="gallery.html?category=earth">Bumi dari Angkasa</a></li>
+          <li><a href="gallery.html?category=missions">Misi &amp; Astronaut</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Akun</h3>
+        <ul class="footer__list">
+          <li data-auth="guest"><a href="login.html">Masuk</a></li>
+          <li data-auth="guest"><a href="register.html">Daftar</a></li>
+          <li data-auth="user"><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year>2026</span> LUCENT — M. Arhamullah Ramadhan | Proyek UTS Pemrograman Web.</span>
+      <span class="mono">RA 05h 34m · DEC +22° · z 0.001</span>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

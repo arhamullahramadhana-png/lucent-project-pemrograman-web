@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard — LUCENT</title>
+  <meta name="description"
+    content="Dashboard pribadi LUCENT: sapaan, citra antariksa favorit, dan akses cepat ke galeri NASA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="dashboard">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header is-solid" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__word">LUCENT</span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="news.html">News</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+        <div class="nav__auth">
+          <a class="nav__link" data-auth="guest" href="login.html">Masuk</a>
+          <a class="btn btn--primary btn--sm" data-auth="guest" href="register.html">Daftar</a>
+          <a class="nav__user" data-auth="user" href="dashboard.html">
+            <span class="nav__avatar" data-user-initial aria-hidden="true">L</span>
+            <span class="nav__username" data-user-name>Pengguna</span>
+          </a>
+          <button class="nav__link" data-auth="user" type="button" data-logout>Keluar</button>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false"
+        aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container">
+      <div class="dash-head">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h1 class="dash-hello">Halo, <span data-greeting-name>teman</span>.</h1>
+          <p class="section__lead mt-0">Senang melihatmu kembali. Ini ringkasan ruang pribadimu di LUCENT.</p>
+        </div>
+        <div class="auth__aside">
+          <span class="mono">Anggota sejak <span data-member-since>2026</span></span>
+          <button class="btn btn--ghost btn--sm" type="button" data-logout>Keluar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akses cepat -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Akses Cepat</p>
+            <h2 class="section__title">Mau ke mana dulu?</h2>
+          </div>
+        </div>
+        <div class="quick-grid">
+          <a class="quick-card reveal" href="gallery.html">
+            <span class="quick-card__icon">01</span>
+            <h3 class="quick-card__title">Jelajahi Galeri</h3>
+            <p class="quick-card__text">Dua puluh citra NASA dari empat tema, lengkap dengan keterangan resminya.</p>
+          </a>
+          <a class="quick-card reveal" href="news.html">
+            <span class="quick-card__icon">02</span>
+            <h3 class="quick-card__title">Baca Artikel</h3>
+            <p class="quick-card__text">Cerita di balik citra: nebula, planet, Bumi, dan misi yang mengubah sejarah.</p>
+          </a>
+          <a class="quick-card reveal" href="about.html">
+            <span class="quick-card__icon">03</span>
+            <h3 class="quick-card__title">Kenali LUCENT</h3>
+            <p class="quick-card__text">Visi, misi, dan cerita di balik galeri antariksa ini.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto favorit -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Citra Favorit</p>
+            <h2 class="section__title">Pilihan yang kamu simpan</h2>
+          </div>
+          <a class="link-arrow" href="gallery.html">Cari citra lain →</a>
+        </div>
+
+        <div class="fav-grid">
+          <figure class="photo-card" data-category="galaxies" data-title="Nebula Dumbbell" data-meta="NASA · JPL · 2011"
+            data-nasa-id="PIA14417"
+            data-desc="Sisa bintang yang sekarat dan memancarkan cahaya inframerah, dijuluki Nebula Dumbbell karena bentuknya."
+            data-desc-en="The Dumbbell nebula, also known as Messier 27, pumps out infrared light in this image from NASA Spitzer Space Telescope. Planetary nebulae are now known to be the remains of stars that once looked a lot like our sun."
+            data-source="https://images.nasa.gov/details/PIA14417"
+            data-full="https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg" tabindex="0">
+            <img src="https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg" alt="Nebula Dumbbell"
+              loading="lazy" data-seed="PIA14417" />
+            <figcaption class="photo-card__overlay">
+              <span class="photo-meta">NASA · JPL · 2011</span>
+              <span class="photo-card__title">Nebula Dumbbell</span>
+            </figcaption>
+          </figure>
+          <figure class="photo-card" data-category="planets" data-title="Awan Jupiter" data-meta="NASA · JPL · 2022"
+            data-nasa-id="PIA25016"
+            data-desc="Pesawat Juno melintas rendah di atas puncak awan Jupiter, menangkap pusaran badai yang rumit."
+            data-desc-en="On April 9, 2022, as NASA's Juno mission completed its 41st close flyby of Jupiter, its JunoCam instrument captured what it would look like to ride along with the spacecraft. Citizen scientist Andrea Luck created this animated sequence using raw JunoCam image data. At about 87,000 miles (140,000 kilometers) in diameter, Jupiter is the largest planet in the solar system. At the point of closest approach on April 9, Juno was just over 2,050 miles (3,300 kilometers) above Jupiter's colorful cloud tops. At that moment, it was traveling at about 131,000 MPH (210,000 kilometers per hour) relative to the planet. By comparison, at closest approach Juno was more than 10 times closer to Jupiter than satellites in geosynchronous orbit are to Earth, traveling at a speed about five times faster than the Apollo missions did when they left Earth for the Moon. Movie available at https://photojournal.jpl.nasa.gov/catalog/PIA25016"
+            data-source="https://images.nasa.gov/details/PIA25016"
+            data-full="https://images-assets.nasa.gov/image/PIA25016/PIA25016~large.jpg" tabindex="0">
+            <img src="https://images-assets.nasa.gov/image/PIA25016/PIA25016~medium.jpg" alt="Awan Jupiter"
+              loading="lazy" data-seed="PIA25016" />
+            <figcaption class="photo-card__overlay">
+              <span class="photo-meta">NASA · JPL · 2022</span>
+              <span class="photo-card__title">Awan Jupiter</span>
+            </figcaption>
+          </figure>
+          <figure class="photo-card" data-category="earth" data-title="Aurora Australis" data-meta="NASA · JSC · 1991"
+            data-nasa-id="S39-25-006"
+            data-desc="Cahaya aurora hijau menjulang di langit belahan selatan Bumi, diabadikan dari orbit."
+            data-desc-en="STS039-25-006 (28 April-6 May 1991) --- A 35mm frame of the Aurora Australis, also known as the Southern Lights, photographed from the Space Shuttle Discovery's flight deck by one of its seven crew members. One of the mission objectives was to measure the spectral and spatial characteristics of auroral emissions. While passing over the sunlighted portion of Earth, the crew was able to take a number of photos of the various geographic points on the planet; much of the time on nightside passes was devoted to a thorough study and documentation of auroral displays."
+            data-source="https://images.nasa.gov/details/S39-25-006"
+            data-full="https://images-assets.nasa.gov/image/S39-25-006/S39-25-006~large.jpg" tabindex="0">
+            <img src="https://images-assets.nasa.gov/image/S39-25-006/S39-25-006~medium.jpg" alt="Aurora Australis"
+              loading="lazy" data-seed="S39-25-006" />
+            <figcaption class="photo-card__overlay">
+              <span class="photo-meta">NASA · JSC · 1991</span>
+              <span class="photo-card__title">Aurora Australis</span>
+            </figcaption>
+          </figure>
+          <figure class="photo-card" data-category="missions" data-title="Latihan Spacewalk"
+            data-meta="NASA · KSC · 2018" data-nasa-id="jsc2018e087572"
+            data-desc="Para astronaut berlatih berjalan di luar angkasa di dalam kolam raksasa sebelum bertugas di orbit."
+            data-desc-en="Commercial Crew Astronaut Suni Williams practices spacewalking in the Virtual Reality Lab at Johnson Space Center in Houston. The training provides real-time graphics and motion simulators to replicate the space environment. NASAÔÇÖs Commercial Crew Program is working with Boeing and SpaceX to return human spaceflight launches to the United States in 2019. Williams is assigned to BoeingÔÇÖs first operational mission after the companyÔÇÖs test flight with crew."
+            data-source="https://images.nasa.gov/details/jsc2018e087572"
+            data-full="https://images-assets.nasa.gov/image/jsc2018e087572/jsc2018e087572~large.jpg" tabindex="0">
+            <img src="https://images-assets.nasa.gov/image/jsc2018e087572/jsc2018e087572~medium.jpg"
+              alt="Latihan Spacewalk" loading="lazy" data-seed="jsc2018e087572" />
+            <figcaption class="photo-card__overlay">
+              <span class="photo-meta">NASA · KSC · 2018</span>
+              <span class="photo-card__title">Latihan Spacewalk</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <p class="eyebrow" style="justify-content:center">Lanjut menjelajah</p>
+        <h2 class="cta-band__title">Arsip akan terus bertambah. Jangan lewatkan citra berikutnya.</h2>
+        <a class="btn btn--primary" href="gallery.html">Buka galeri</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__word">LUCENT</span>
+        </a>
+        <p class="footer__tag">Arsip citra antariksa NASA — tempat semesta bercerita lewat cahaya.</p>
+      </div>
+      <div>
+        <h3 class="footer__title">Jelajahi</h3>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Kategori</h3>
+        <ul class="footer__list">
+          <li><a href="gallery.html?category=galaxies">Galaksi &amp; Nebula</a></li>
+          <li><a href="gallery.html?category=planets">Planet &amp; Bulan</a></li>
+          <li><a href="gallery.html?category=earth">Bumi dari Angkasa</a></li>
+          <li><a href="gallery.html?category=missions">Misi &amp; Astronaut</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Akun</h3>
+        <ul class="footer__list">
+          <li data-auth="guest"><a href="login.html">Masuk</a></li>
+          <li data-auth="guest"><a href="register.html">Daftar</a></li>
+          <li data-auth="user"><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year>2026</span> LUCENT — M. Arhamullah Ramadhan | Proyek UTS Pemrograman Web.</span>
+      <span class="mono">RA 05h 34m · DEC +22° · z 0.001</span>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

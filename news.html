@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News — LUCENT</title>
+  <meta name="description"
+    content="Artikel dan cerita di balik citra NASA: nebula, planet, Bumi dari angkasa, misi Apollo, James Webb, dan astrofotografi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="news">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header is-solid" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__word">LUCENT</span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="news.html">News</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+        <div class="nav__auth">
+          <a class="nav__link" data-auth="guest" href="login.html">Masuk</a>
+          <a class="btn btn--primary btn--sm" data-auth="guest" href="register.html">Daftar</a>
+          <a class="nav__user" data-auth="user" href="dashboard.html">
+            <span class="nav__avatar" data-user-initial aria-hidden="true">L</span>
+            <span class="nav__username" data-user-name>Pengguna</span>
+          </a>
+          <button class="nav__link" data-auth="user" type="button" data-logout>Keluar</button>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false"
+        aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Jurnal</p>
+        <h1 class="page-head__title">News</h1>
+        <p class="page-head__lead section__lead">Cerita di balik citra: cara cahaya dari miliaran tahun lalu sampai ke
+          lensa kita, apa yang diungkap teleskop, dan bagaimana manusia menjelajah tata surya.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Artikel utama -->
+        <article class="news-feature reveal">
+          <div class="news-feature__media">
+            <img src="https://images-assets.nasa.gov/image/as11-40-5874/as11-40-5874~large.jpg"
+              alt="Buzz Aldrin berdiri di samping bendera Amerika di permukaan Bulan" loading="lazy"
+              data-seed="news-feature" />
+          </div>
+          <div class="news-feature__body">
+            <div class="news-meta">
+              <span>Sejarah Misi</span>
+              <span class="dot">•</span>
+              <span>20 Juli 1969</span>
+              <span class="dot">•</span>
+              <span>8 menit baca</span>
+            </div>
+            <h2 class="news-feature__title">Satu Langkah di Bulan: Cara Apollo 11 Mengubah Cara Kita Melihat Bumi</h2>
+            <p class="news-card__excerpt">Pada 20 Juli 1969, Buzz Aldrin berdiri di Laut Ketenangan. Foto itu bukan
+              sekadar kemenangan teknologi — ia mengubah cara manusia memandang rumahnya sendiri.</p>
+            <a class="link-arrow" href="articles/article-apollo.html">Baca artikel →</a>
+          </div>
+        </article>
+
+        <!-- Daftar artikel -->
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/PIA25433/PIA25433~medium.jpg"
+                alt="Nebula Elang dalam citra inframerah teleskop WISE" loading="lazy" data-seed="news-1" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Teleskop</span>
+              <span class="dot">•</span>
+              <span>11 Nov 2022</span>
+            </div>
+            <h3 class="news-card__title">Mata Baru untuk Semesta: Dari Hubble ke James Webb</h3>
+            <p class="news-card__excerpt">Teleskop inframerah membuka lapisan debu yang tak terlihat mata, mengungkap
+              bintang-bintang yang selama ini tersembunyi.</p>
+            <div class="news-card__foot">
+              <span class="mono">6 menit</span>
+              <a class="link-arrow" href="articles/article-jwst.html">Baca →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg"
+                alt="Nebula Dumbbell dalam cahaya inframerah" loading="lazy" data-seed="news-2" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Nebula</span>
+              <span class="dot">•</span>
+              <span>10 Agu 2011</span>
+            </div>
+            <h3 class="news-card__title">Dari Debu Menjadi Bintang: Membaca Nebula Planet</h3>
+            <p class="news-card__excerpt">Nebula planet bukan planet sama sekali — ia adalah sisa bintang sekarat yang
+              suatu hari akan menyerupai Matahari kita.</p>
+            <div class="news-card__foot">
+              <span class="mono">5 menit</span>
+              <a class="link-arrow" href="articles/article-nebula.html">Baca →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/iss074e0089803/iss074e0089803~medium.jpg"
+                alt="Lapisan atmosfer biru tipis Bumi di atas Samudra Pasifik" loading="lazy" data-seed="news-3" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Bumi</span>
+              <span class="dot">•</span>
+              <span>16 Jan 2026</span>
+            </div>
+            <h3 class="news-card__title">Bumi di Ambang Malam: Menghargai Lapisan Biru Tipis</h3>
+            <p class="news-card__excerpt">Dari orbit, atmosfer hanya tampak sebagai garis biru setipis kertas — lapisan
+              rapuh yang menjaga seluruh kehidupan.</p>
+            <div class="news-card__foot">
+              <span class="mono">4 menit</span>
+              <a class="link-arrow" href="articles/article-earthrise.html">Baca →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/PIA22228/PIA22228~medium.jpg"
+                alt="Ilustrasi pendarat InSight di permukaan Mars" loading="lazy" data-seed="news-4" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Misi</span>
+              <span class="dot">•</span>
+              <span>25 Jan 2018</span>
+            </div>
+            <h3 class="news-card__title">Mendengarkan Denyut Mars: Apa Kata InSight</h3>
+            <p class="news-card__excerpt">Pendarat InSight memeriksa "kesehatan" Mars untuk pertama kalinya sejak planet
+              itu terbentuk 4,5 miliar tahun lalu.</p>
+            <div class="news-card__foot">
+              <span class="mono">7 menit</span>
+              <a class="link-arrow" href="articles/article-mars.html">Baca →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg"
+                alt="Galaksi Andromeda dalam citra teleskop Galaxy Evolution Explorer" loading="lazy"
+                data-seed="news-5" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Galaksi</span>
+              <span class="dot">•</span>
+              <span>10 Des 2003</span>
+            </div>
+            <h3 class="news-card__title">Di Bawah Cahaya Andromeda: Galaksi Tetangga Kita</h3>
+            <p class="news-card__excerpt">Andromeda adalah galaksi paling masif di Grup Lokal. Di suatu saat, ia akan
+              bertemu Bima Sakti.</p>
+            <div class="news-card__foot">
+              <span class="mono">6 menit</span>
+              <a class="link-arrow" href="articles/article-blackhole.html">Baca →</a>
+            </div>
+          </article>
+
+          <article class="news-card reveal">
+            <div class="news-card__media">
+              <img src="https://images-assets.nasa.gov/image/iss073e0982823/iss073e0982823~medium.jpg"
+                alt="Airglow terang menyelimuti horizon Bumi dan Bima Sakti menerangi langit malam" loading="lazy"
+                data-seed="news-6" />
+            </div>
+            <div class="news-meta">
+              <span class="news-card__tag">Astrofotografi</span>
+              <span class="dot">•</span>
+              <span>26 Okt 2025</span>
+            </div>
+            <h3 class="news-card__title">Memotret dari Orbit: Astrofotografi bagi Pemula</h3>
+            <p class="news-card__excerpt">Airglow, Bima Sakti, dan Bulan dalam satu bingkai. Pelajaran dari cara
+              astronot memotret langit malam dari Stasiun Antariksa.</p>
+            <div class="news-card__foot">
+              <span class="mono">5 menit</span>
+              <a class="link-arrow" href="articles/article-astrofotografi.html">Baca →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" data-auth="guest">
+      <div class="container cta-band__inner">
+        <p class="eyebrow" style="justify-content:center">Berlangganan</p>
+        <h2 class="cta-band__title">Dapatkan artikel baru lebih dulu.</h2>
+        <a class="btn btn--primary" href="register.html">Buat akun</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__word">LUCENT</span>
+        </a>
+        <p class="footer__tag">Arsip citra antariksa NASA — tempat semesta bercerita lewat cahaya.</p>
+      </div>
+      <div>
+        <h3 class="footer__title">Jelajahi</h3>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Kategori</h3>
+        <ul class="footer__list">
+          <li><a href="gallery.html?category=galaxies">Galaksi &amp; Nebula</a></li>
+          <li><a href="gallery.html?category=planets">Planet &amp; Bulan</a></li>
+          <li><a href="gallery.html?category=earth">Bumi dari Angkasa</a></li>
+          <li><a href="gallery.html?category=missions">Misi &amp; Astronaut</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Akun</h3>
+        <ul class="footer__list">
+          <li data-auth="guest"><a href="login.html">Masuk</a></li>
+          <li data-auth="guest"><a href="register.html">Daftar</a></li>
+          <li data-auth="user"><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year>2026</span> LUCENT — M. Arhamullah Ramadhan | Proyek UTS Pemrograman Web.</span>
+      <span class="mono">RA 05h 34m · DEC +22° · z 0.001</span>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

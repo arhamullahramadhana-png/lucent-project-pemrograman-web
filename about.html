@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — LUCENT</title>
+  <meta name="description" content="Tujuan LUCENT, cerita di baliknya, visi dan misi, serta profil pembuat website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="about">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header is-solid" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__word">LUCENT</span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="news.html">News</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+        </ul>
+        <div class="nav__auth">
+          <a class="nav__link" data-auth="guest" href="login.html">Masuk</a>
+          <a class="btn btn--primary btn--sm" data-auth="guest" href="register.html">Daftar</a>
+          <a class="nav__user" data-auth="user" href="dashboard.html">
+            <span class="nav__avatar" data-user-initial aria-hidden="true">L</span>
+            <span class="nav__username" data-user-name>Pengguna</span>
+          </a>
+          <button class="nav__link" data-auth="user" type="button" data-logout>Keluar</button>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false"
+        aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Tentang</p>
+        <h1 class="page-head__title">About</h1>
+        <p class="page-head__lead section__lead">LUCENT bukan sekadar kumpulan gambar. Ini tempat latihan untuk
+          memperhatikan — dan alasan untuk tidak berhenti melakukannya.</p>
+      </div>
+    </section>
+
+    <!-- Tujuan + cerita -->
+    <section class="section">
+      <div class="container">
+        <div class="about-story">
+          <div class="reveal">
+            <p class="eyebrow">Tujuan</p>
+            <h2 class="section__title">Kenapa LUCENT dibuat</h2>
+            <p class="section__lead">Kami ingin ruang yang tenang untuk melihat citra semesta dengan sungguh-sungguh —
+              tanpa distraksi, tanpa gulir tak berujung.</p>
+          </div>
+          <div class="about-story__body reveal">
+            <p>Halaman ini dibuat agar siapa pun bisa menikmati keindahan antariksa tanpa harus memiliki teleskop. Semua
+              citra berasal dari arsip NASA dan dikelompokkan per tema agar mudah ditelusuri. Setiap gambar dilengkapi
+              keterangan resminya — supaya kamu bisa menikmati pemandangannya sekaligus memahami apa yang sedang kamu
+              lihat.</p>
+            <p>Tujuannya sederhana: membuat orang berhenti sebentar, menikmati satu bingkai semesta, lalu mungkin
+              tergoda untuk keluar dan menatap langit sendiri.</p>
+          </div>
+        </div>
+
+        <blockquote class="pull-quote reveal">“Kita terbuat dari bintang — dan setiap citra semesta adalah cermin yang
+          memantulkan asal-usul kita.”</blockquote>
+
+        <div class="about-story">
+          <div class="reveal">
+            <p class="eyebrow">Cerita</p>
+            <h2 class="section__title">Dari satu foto Nebula Elang dan malam yang penuh pertanyaan</h2>
+          </div>
+          <div class="about-story__body reveal">
+            <p>LUCENT bermula dari satu malam ketika langit begitu bersih dan pertanyaan mulai muncul: apa yang
+              sebenarnya ada di balik titik-titik cahaya itu? Tidak ada teleskop, hanya rasa penasaran dan kebiasaan
+              menelusuri arsip citra NASA secara perlahan.</p>
+            <p>Sejak itu, kebiasaan itu tumbuh: mengumpulkan citra dari pilar kelahiran bintang, planet-planet di tata
+              surya, Bumi yang dilihat dari orbit, sampai jejak kaki manusia di Bulan. Nama <em>LUCENT</em> diambil dari
+              kata yang berarti &ldquo;bercahaya&rdquo; — pengingat bahwa yang kita kejar selalu soal cahaya, bahkan
+              yang telah menempuh miliaran tahun untuk sampai kepada kita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Visi &amp; Misi</p>
+            <h2 class="section__title">Arah yang kami tuju</h2>
+          </div>
+        </div>
+        <div class="value-grid">
+          <article class="value-card reveal">
+            <span class="value-card__num">01 — Visi</span>
+            <h3 class="value-card__title">Semesta yang bisa diakses siapa saja</h3>
+            <p class="value-card__text">Menjadi galeri tempat pemula merasa disambut, bukan dihakimi — di mana setiap
+              citra punya ruang untuk dilihat.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-card__num">02 — Misi</span>
+            <h3 class="value-card__title">Mengkurasi dengan sumber yang jelas</h3>
+            <p class="value-card__text">Setiap citra disertai keterangan resmi NASA dan tautan sumbernya, agar
+              pengunjung belajar sekaligus menikmati.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="value-card__num">03 — Nilai</span>
+            <h3 class="value-card__title">Jujur, sederhana, sabar</h3>
+            <p class="value-card__text">Kami menghargai ketelitian, keterbukaan, dan kejujuran citra — termasuk menyebut
+              mana yang ilustrasi dan mana yang foto asli.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profil pembuat -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Profil</p>
+            <h2 class="section__title">Pembuat website</h2>
+          </div>
+        </div>
+        <div class="profile-card reveal">
+          <div class="profile-card__media">
+            <img src="profil/arham.jpg" alt="Potret M. Arhamullah Ramadhan, pembuat LUCENT" loading="lazy" />
+          </div>
+          <div class="profile-card__body">
+            <p class="eyebrow">Mahasiswa</p>
+            <h3 class="section__title mt-0" style="font-size:clamp(1.6rem,3vw,2.2rem)">M. Arhamullah Ramadhan</h3>
+            <p class="profile-card__role mono">Pembuat &amp; Kurator LUCENT</p>
+            <p class="section__lead">Seorang mahasiswa yang jatuh cinta pada antariksa lewat citra-citra NASA. Melalui
+              LUCENT, ia ingin berbagi cara melihat semesta sekaligus mendokumentasikan perjalanan belajarnya.</p>
+            <p class="mono" style="margin-top:1.4rem">Fokus: nebula · planet · Bumi dari orbit · misi antariksa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <p class="eyebrow" style="justify-content:center">Mulai dari sini</p>
+        <h2 class="cta-band__title">Lihat sendiri apa yang membuat semesta layak disimpan.</h2>
+        <a class="btn btn--primary" href="gallery.html">Jelajahi galeri</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="LUCENT — beranda">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__word">LUCENT</span>
+        </a>
+        <p class="footer__tag">Arsip citra antariksa NASA — tempat semesta bercerita lewat cahaya.</p>
+      </div>
+      <div>
+        <h3 class="footer__title">Jelajahi</h3>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Kategori</h3>
+        <ul class="footer__list">
+          <li><a href="gallery.html?category=galaxies">Galaksi &amp; Nebula</a></li>
+          <li><a href="gallery.html?category=planets">Planet &amp; Bulan</a></li>
+          <li><a href="gallery.html?category=earth">Bumi dari Angkasa</a></li>
+          <li><a href="gallery.html?category=missions">Misi &amp; Astronaut</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Akun</h3>
+        <ul class="footer__list">
+          <li data-auth="guest"><a href="login.html">Masuk</a></li>
+          <li data-auth="guest"><a href="register.html">Daftar</a></li>
+          <li data-auth="user"><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year>2026</span> LUCENT — M. Arhamullah Ramadhan | Proyek UTS Pemrograman Web.</span>
+      <span class="mono">RA 05h 34m · DEC +22° · z 0.001</span>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
