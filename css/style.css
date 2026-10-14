@@ -40,7 +40,7 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -1200,10 +1200,11 @@ html.has-session [data-auth="guest"] { display: none; }
     border-left: 1px solid var(--line);
     padding: 2rem var(--gutter);
     transform: translateX(105%);
-    transition: transform 0.45s var(--ease);
+    visibility: hidden;
+    transition: transform 0.45s var(--ease), visibility 0s 0.45s;
     overflow-y: auto;
   }
-  .nav.is-open { transform: none; }
+  .nav.is-open { transform: none; visibility: visible; transition: transform 0.45s var(--ease), visibility 0s 0s; }
   .nav__list { flex-direction: column; align-items: stretch; gap: 0; }
   .nav__list li { border-bottom: 1px solid var(--line); }
   .nav__link { display: block; padding: 1.05rem 0; font-size: 0.9rem; }
