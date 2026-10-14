@@ -1214,6 +1214,19 @@ html.has-session [data-auth="guest"] { display: none; }
   }
   .nav__auth .btn { width: 100%; }
   .nav__user { justify-content: flex-start; }
+
+  .lightbox__body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 45vh);
+  }
+  .lightbox__stage { padding: 0.6rem var(--gutter); }
+  .lightbox__caption {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    min-height: 0;
+  }
+  .lightbox__title { font-size: 1.2rem; }
+  .lightbox__nav { width: 42px; height: 42px; }
 }
 
 @media (max-width: 560px) {
